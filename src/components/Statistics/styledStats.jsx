@@ -9,29 +9,29 @@ export const StatsCard = styled.section`
 `;
 
 export const StatsTitle = styled.h2`
-font-size : 20px;
-text-align: center ; 
+  font-size: 20px;
+  text-align: center;
 `;
 
 export const StatsList = styled.ul`
-display: flex;
-padding: 0;
-margin:0;
+  display: flex;
+  padding: 0;
+  margin: 0;
 `;
 
 export const StatsListItem = styled.li`
-color: #ffffff;
-text-decoration: none;
-text-align: center ; 
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    padding: 8px;
-    width: calc(100% / 5);
-    background-color: ${getRandomHexColor} ;
-`
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  padding: 8px;
+  width: calc(100% / 5);
+  background-color: ${getRandomHexColor};
+`;
 function getRandomHexColor() {
-    return `#${Math.floor(Math.random() * 16777215)
-      .toString(16)
-      .padStart(6, 0)}`;
-  }
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}

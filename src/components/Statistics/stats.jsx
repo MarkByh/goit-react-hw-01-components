@@ -1,27 +1,26 @@
-
 import PropTypes from 'prop-types';
 import {
   StatsTitle,
   StatsCard,
   StatsList,
-  StatsListItem
+  StatsListItem,
 } from './styledStats.jsx';
 
-export const Statistics =({ title, stats }) => {
-    return (
-      <StatsCard>
-        {title && <StatsTitle>{title}</StatsTitle>}
-   <StatsList>
-    {stats.map(({ id, label, percentage }) => (
-      <StatsListItem key={id}>
-        <span>{label}</span>
-        <span>{percentage}%</span>
-      </StatsListItem> 
+export const Statistics = ({ title, stats }) => {
+  return (
+    <StatsCard>
+      {title && <StatsTitle>{title}</StatsTitle>}
+      <StatsList>
+        {stats.map(({ id, label, percentage }) => (
+          <StatsListItem key={id}>
+            <span>{label}</span>
+            <span>{percentage}%</span>
+          </StatsListItem>
         ))}
       </StatsList>
-      </StatsCard>
-    )
-}
+    </StatsCard>
+  );
+};
 
 Statistics.propTypes = {
   title: PropTypes.string,

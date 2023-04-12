@@ -1,8 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const FriendsList = styled.ul`
-   
-`;
+export const FriendsList = styled.ul``;
 export const FriendItem = styled.li`
   display:flex;
   gap 5px;
@@ -14,17 +12,17 @@ export const FriendItem = styled.li`
   border: 1px solid lightgray;
 `;
 export const FriendStatus = styled.span`
-height: 10px;
-width: 10px;
-
-border-radius: 50%;
-display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-color: ${friends => (friends.isOnline ? 'green' : 'red')};
+  border-radius: 50%;
+  display: inline-block;
 `;
 export const FriendImg = styled.img`
-border-radius: 20%;
- width: 30px;
- height: 30px;
+  border-radius: 20%;
+  width: 30px;
+  height: 30px;
 `;
 export const FriendName = styled.p`
-font-size:14px;
+  font-size: 14px;
 `;
